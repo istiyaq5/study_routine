@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Month Intensive Study Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Three-Month Intensive Study Routine with Coaching Schedule</h1>
+        <div class="quote-container">
+            <p id="quote"></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Saturday</th>
+                    <th>Friday (Off)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 AM - 10:00 AM</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Lesson 1</td>
+                    <td onclick="toggleComplete(this)">Review Week's Lessons</td>
+                </tr>
+                <tr>
+                    <td>10:15 AM - 12:15 PM</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Lesson 2</td>
+                    <td onclick="toggleComplete(this)">Review Week's Lessons</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM - 2:30 PM</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Lesson 3</td>
+                    <td onclick="toggleComplete(this)">Practice Questions/Mock Exams</td>
+                </tr>
+                <tr>
+                    <td>2:45 PM - 6:00 PM</td>
+                    <td onclick="toggleComplete(this)">Lesson 4</td>
+                    <td onclick="toggleComplete(this)">Coaching</td>
+                    <td onclick="toggleComplete(this)">Lesson 4</td>
+                    <td onclick="toggleComplete(this)">Coaching</td>
+                    <td onclick="toggleComplete(this)">Lesson 4</td>
+                    <td onclick="toggleComplete(this)">Coaching</td>
+                    <td onclick="toggleComplete(this)">Practice Questions/Mock Exams</td>
+                </tr>
+                <tr>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Coaching</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Coaching</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Light Review/Relaxation</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM - 8:00 PM</td>
+                    <td onclick="toggleComplete(this)">Practice</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Practice</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Practice</td>
+                    <td onclick="toggleComplete(this)">Review</td>
+                    <td onclick="toggleComplete(this)">Light Review/Relaxation</td>
+                </tr>
+                <tr>
+                    <td>8:00 PM - 10:00 PM</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Night Study</td>
+                    <td onclick="toggleComplete(this)">Free Time</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="notepad-container">
+            <div class="tabs">
+                <button class="tab-button" onclick="openTab('current-notes')">Current Notes</button>
+                <button class="tab-button" onclick="openTab('new-note')">New Note</button>
+            </div>
+            <div id="current-notes" class="tab-content">
+                <h2>Current Notes</h2>
+                <textarea id="notes" placeholder="Write your notes here..."></textarea>
+                <button onclick="saveNotes()">Save Notes</button>
+            </div>
+            <div id="new-note" class="tab-content">
+                <h2>New Note</h2>
+                <textarea id="new-note-content" placeholder="Write a new note here..."></textarea>
+                <button onclick="saveNewNote()">Save New Note</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
